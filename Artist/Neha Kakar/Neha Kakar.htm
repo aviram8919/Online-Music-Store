@@ -1,0 +1,118 @@
+<html>
+<head>
+    <title>Artist-Neha kakar</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\DOC!\Desktop\website_padalgal\Css\Artist.css"></link>
+    <link rel="stylesheet" type="text/css" href="Homepage_CSS.css"></link>
+    <link rel='icon' href='C:\Users\DOC!\Desktop\website_padalgal\music.png' type='image/jpg'>
+    <link rel="stylesheet" type="text/css" href="C:\Users\DOC!\Desktop\website_padalgal\Css\AudioPlayer_CSS.css"></link>
+
+    <script>
+        function song(elmnt)
+        {
+             document.getElementById("audio").src=elmnt.alt
+             document.getElementById("songname").innerHTML=elmnt.alt
+
+        }
+    </script>
+</head>
+<body>
+ <div class="navbar">
+            <a href="Homepage.htm"><strong>HOME</strong></a>
+            <div class="dropdown">
+            <strong>Browse</strong>
+              <div class="dropdown-content">
+                    <a href="TopArtist.htm">Top Artists</a>
+                    <a href="TopSongs.htm">Top Songs</a>
+                    <a href="NewRelease.htm">New Releases</a>
+              </div>
+            </div>
+            <div class="dropdown">
+                <strong>More</strong>
+                <div class="dropdown-content">
+                        <a href="AboutUs.htm" >About Us</a>
+                        <a href="">Help & Support</a>
+                </div>
+            </div>
+        <div id="account" class="accnt">
+            <a id="login-btn" href="Login_Page.html">Log In</a>
+            <a id="signup-btn" href="Sign_Up.html">Sign Up</a>
+        </div>
+</div>
+<div class="Table">
+               <div class="row" id="top">
+                   <div class="coloumn" id="image">
+                   <img src="Neha Kakar.jpg" height="200" width="200"></img>
+                   </div>
+                    <p style="padding-left:50px;font-size:40px;color:white;">Neha Kakar
+                    </p>
+                   <div class="coloumn" id="details">
+                   <p>Neha Kakkar is an Indian singer.
+                   She competed on season 2 of the television reality show Indian Idol in 2006.
+                   She also appeared in Comedy Circus Ke Taansen in 2014 on Sony TV.</p>
+                   </div>
+                </div>
+               <div class="row">
+               <div class="coloumn"><img src="Tukur Tukur.jpg" alt="Tukur Tukur.mp3" onclick="song(this)" height="150" width="150"></img>
+               <p id="music">Tukur Tukur
+               </p>
+               </div>
+               <div class="coloumn"><img src="Mile Ho Tum.jpg" alt="Mile Ho Tum.mp3" onclick="song(this)" height="150" width="150"></img>
+               <p id="music">Mile Ho Tum</p>
+               </div>
+               <div class="coloumn"><img src="Maahi Ve.jpg" alt="Maahi Ve.mp3" onclick="song(this)" height="150" width="150"></img>
+               <p id="music">Maahi Ve</p>
+               </div>
+               <div class="coloumn"><img src="La La La.jpg" alt="La La La.mp3" onclick="song(this)" height="150" width="150"></img>
+               <p id="music">La La La</p>
+               </div>
+               <div class="coloumn"><img src="Chalti Hai Kya.jpg" alt="Chalti Hai Kya 9 Se 12.mp3" onclick="song(this)" height="150" width="150"></img>
+               <p id="music">Chalti Hai Kya</p>
+               </div>
+               </div>
+            </div>
+<div class="footer">
+    © Padalgal|Angel Tek Pvt Ltd. 2018, All Rights Reserved
+</div>
+<div class="AudioPlayer">
+ <div class="audio green-audio-player">
+  <div class="loading">
+    <div class="spinner"></div>
+  </div>
+  <div class="play-pause-btn">
+    <svg width="18" height="24" viewBox="0 0 18 24">
+      <path fill="black" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon" id="playPause"/>
+    </svg>
+  </div>
+
+  <div class="controls">
+    <span class="current-time">0:00</span>
+    <div class="songTitle">
+        <p id="songname"></p>
+    </div>
+    <div class="slider" data-direction="horizontal">
+      <div class="progress">
+        <div class="pin" id="progress-pin" data-method="rewind"></div>
+      </div>
+    </div>
+    <span class="total-time">0:00</span>
+  </div>
+
+  <div class="volume">
+    <div class="volume-btn">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path fill="black" fill-rule="evenodd" d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z" id="speaker"/>
+      </svg>
+    </div>
+    <div class="volume-controls hidden">
+      <div class="slider" data-direction="vertical">
+        <div class="progress">
+          <div class="pin" id="volume-pin" data-method="changeVolume"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <audio id="audio">  </audio>
+</div>
+<script src="E:\Project\CSE-326\website_padalgal\JavaScript\AudioPlayer_JS.js"></script>
+</body>

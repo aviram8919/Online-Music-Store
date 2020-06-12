@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>header</title>
+    <style>
+        .dropdown{
+        overflow:hidden;}
+        .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content {
+    display: block;}
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <strong>dropdown</strong>
+        <div class="dropdown-content">
+            <ul>
+              <a href="#"><li>link 1</li></a>
+                <a href="#"><li>link 2</li></a>
+                <a href="#"><li>link 3</li></a>
+            </ul>
+        </div>
+    </div>
+
+
+</body>

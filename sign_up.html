@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign Up</title>
+<script src="JavaScript/Sign_Up_JS.js"></script>
+<link rel="stylesheet" type="text/css" href="Css/Homepage_CSS.css"></link>
+<link rel="stylesheet" type="text/css" href="Css/SignUp_CSS.css"></link>
+<link rel='icon' href='music.png' type='image/jpg'>
+
+</head>
+<body>
+     <div class="navbar">
+            <a href="Homepage.htm"><strong>HOME</strong></a>
+            <div class="dropdown">
+            <strong>Browse</strong>
+              <div class="dropdown-content">
+                    <a href="TopArtist.htm">Top Artists</a>
+                    <a href="TopSongs.htm">Top Songs</a>
+                    <a href="NewRelease.htm">New Releases</a>
+              </div>
+            </div>
+            <div class="dropdown">
+                <strong>More</strong>
+                <div class="dropdown-content">
+                        <a href="AboutUs.htm" target="_self">About Us</a>
+                        <a href="">Help & Support</a>
+                </div>
+            </div>
+        <div id="account" class="accnt">
+            <a id="login-btn" href="Login_Page.html" target="_self">Log In</a>
+            <a id="signup-btn" href="Sign_Up.html">Sign Up</a>
+        </div>
+        </div>
+
+
+<div class="signupbox">
+<center>
+<form class="fo" method="post" action="Homepage.htm"onsubmit="return validate(this)">
+<h1 id="i1"><center> Sign Up</center></h1>
+<input class="input_box" style="width:40%;" type="text" name="FirstName" placeholder="First Name"  required> &nbsp &nbsp &nbsp &nbsp
+<input class="input_box" style="width:40%;" type="text" name="LastName" placeholder="Last Name" required maxlength="10"><br><br>
+<input class="input_box" type="Username" name="Username" placeholder="Username" required><br><br>
+<input class="input_box" type="email" name="Email" placeholder="Email" required><br><br>
+<input class="input_box" type="text" name="MobileNo"  placeholder="Mobile No." required><br><br>
+<input class="input_box"  type="password" name="Password" id="password" placeholder="Password" required><br><br>
+<input class="input_box" type="password" name="ConfirmPassword" id="confirm" placeholder="Confirm Password" min="8" required><br><br>
+<center style="padding-right:45px;">
+  <input type="submit" value="Sign Up"> &nbsp &nbsp
+  <input type="reset" value="Reset">
+</center>
+<br>
+<center style="padding-right:45px;"><p style="color:white"> Already Registered <white>||</white> <a href="Login_Page.html" title="Login"> Login</a></p></center>
+<p class="terms">By signing up you agree to Padalgal's Terms of Service and Privacy Policy.</p>
+ </form>
+</center>
+</div>
+</body>
+</html>

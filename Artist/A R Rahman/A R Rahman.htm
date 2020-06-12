@@ -1,0 +1,131 @@
+<html>
+<head>
+    <title>Artist-A R Rahman</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\DOC!\Desktop\website_padalgal\Css\Artist.css"></link>
+    <link rel="stylesheet" type="text/css" href="Homepage_CSS.css"></link>
+    <link rel='icon' href='C:\Users\DOC!\Desktop\website_padalgal\music.png' type='image/jpg'>
+    <link rel="stylesheet" type="text/css" href="C:\Users\DOC!\Desktop\website_padalgal\Css\AudioPlayer_CSS.css"></link>
+    <script>
+        function song(elmnt)
+        {
+             document.getElementById("audio").src=elmnt.alt
+             document.getElementById("songname").innerHTML=elmnt.alt
+
+        }
+    </script>
+</head>
+<body>
+ <div class="navbar">
+            <a href="C:\Users\DOC!\Desktop\website_padalgal\Homepage.htm"><strong>HOME</strong></a>
+            <div class="dropdown">
+            <strong>Browse</strong>
+              <div class="dropdown-content">
+                    <a href="C:\Users\DOC!\Desktop\website_padalgal\TopArtist.htm">Top Artists</a>
+                    <a href="C:\Users\DOC!\Desktop\website_padalgal\TopSongs.htm">Top Songs</a>
+                    <a href="C:\Users\DOC!\Desktop\website_padalgal\NewRelease.htm">New Releases</a>
+              </div>
+            </div>
+            <div class="dropdown">
+                <strong>More</strong>
+                <div class="dropdown-content">
+                        <a href="C:\Users\DOC!\Desktop\website_padalgal\AboutUs.htm" >About Us</a>
+                        <a href="">Help & Support</a>
+                </div>
+            </div>
+        <div id="account" class="accnt">
+            <a id="login-btn" href="C:\Users\DOC!\Desktop\website_padalgal\Login_Page.html">Log In</a>
+            <a id="signup-btn" href="C:\Users\DOC!\Desktop\website_padalgal\Sign_Up.html">Sign Up</a>
+        </div>
+</div>
+<div class="Table">
+               <div class="row" id="top">
+                   <div class="coloumn" id="image">
+                   <img src="A R Rahman.jpg" height="200" width="200"></img>
+                   </div>
+                    <p style="padding-left:50px;font-size:40px;color:white;">A R Rahman</p>
+                   <div class="coloumn" id="details">
+                   <p> A. R. Rahman, is an Indian composer, singer-songwriter, music producer, musician and philanthropist.
+                   A. R. Rahman's works are noted for integrating Indian classical music with electronic music, world music and traditional orchestral arrangements..</p>
+                   </div>
+                </div>
+               <div class="row">
+               <div class="coloumn"><img src="Anbe Aaruyire.jpg" alt="Anbe Aaruyire-Aararai Kodi.mp3" onclick="song(this)" height="150" width="150"></img>
+               <p id="music">Anbe Aaruyire-<br>Aararai Kodi</p>
+               </div>
+               <div class="coloumn"><img src="Ayatha Ezhuthu.jpg" alt="Ayatha Ezhuthu-Yakkai Thiri.mp3" onclick="song(this)" height="150" width="150"></img>
+               <p id="music">Ayatha Ezhuthu-<br>Yakkai Thiri</p>
+               </div>
+               <div class="coloumn"><img src="Kadal.jpg" alt="Kadal-Elay Keechan.mp3" height="150" width="150" onclick="song(this)"></img>
+               <p id="music">Kadal-<br>Elay Keechan</p>
+               </div>
+               <div class="coloumn"><img src="Roja.jpg" alt="Roja-Pudhu Vellai Mazhai.mp3" onclick="song(this)" height="150" width="150"></img>
+               <p id="music">Roja-<br>Pudhu Vellai Mazhai</p>
+               </div>
+               <div class="coloumn"><img src="Sillunu Oru Kadhal.jpg" alt="Sillunu Oru Kadhal-Munbe Vaa.mp3" onclick="song(this)" height="150" width="150"></img>
+               <p id="music">Sillunu Oru Kadhal-<br>Munbe Vaa</p>
+               </div>
+               <div class="coloumn"><img src="jai ho.jpg" alt="Jai Ho.mp3" onclick="song(this)" height="150" width="150"></img>
+               <p id="music">Jai Ho
+               </p>
+               </div>
+               <div class="coloumn"><img src="Jodha Akbar.jpg" alt="Khwaja Mere Khwaja.mp3" onclick="song(this)" height="150" width="150"></img>
+               <p id="music">Khwaja Mere Khwaja</p>
+               </div>
+               <div class="coloumn"><img src="Tu Hai.jpg" alt="Tu Hai.mp3" onclick="song(this)"height="150" width="150"></img>
+               <p id="music">Tu Hai</p>
+               </div>
+               <div class="coloumn"><img src="Tere Bina.jpg" alt="Tere Bina.mp3" onclick="song(this)"  height="150" width="150"></img>
+               <p id="music">Tere Bina</p>
+               </div>
+               <div class="coloumn"><img src="Ma Tujhe Salam.jpg" alt="Maa Tujhe Salam.mp3" onclick="song(this)"  height="150" width="150"></img>
+               <p id="music">Maa Tujhe Salam</p>
+               </div>
+               </div>
+            </div>
+<div class="footer">
+    © Padalgal|Angel Tek Pvt Ltd. 2018, All Rights Reserved
+</div>
+<div class="AudioPlayer">
+    <div class="audio green-audio-player">
+  <div class="loading">
+    <div class="spinner"></div>
+  </div>
+  <div class="play-pause-btn">
+    <svg width="18" height="24" viewBox="0 0 18 24">
+      <path fill="black" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon" id="playPause"/>
+    </svg>
+  </div>
+
+  <div class="controls">
+    <span class="current-time">0:00</span>
+    <div class="songTitle">
+        <p id="songname">Sillunu Oru Kadhal-Munbe Vaa.mp3</p>
+    </div>
+    <div class="slider" data-direction="horizontal">
+      <div class="progress">
+        <div class="pin" id="progress-pin" data-method="rewind"></div>
+      </div>
+    </div>
+    <span class="total-time">0:00</span>
+  </div>
+
+  <div class="volume">
+    <div class="volume-btn">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path fill="black" fill-rule="evenodd" d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z" id="speaker"/>
+      </svg>
+    </div>
+    <div class="volume-controls hidden">
+      <div class="slider" data-direction="vertical">
+        <div class="progress">
+          <div class="pin" id="volume-pin" data-method="changeVolume"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <audio id="audio"src="Sillunu Oru Kadhal-Munbe Vaa.mp3">  </audio>
+</div>
+<script src="C:\Users\DOC!\Desktop\website_padalgal\JavaScript\AudioPlayer_JS.js"></script>
+</body>
+

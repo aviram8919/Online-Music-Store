@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>test</title>
+    <script>
+        function on()
+        {
+    document.cookie="username=doc"
+    if(document.cookie=="doc")
+    document.getElementById("demo").innerHTML="doc"
+    else
+    document.getElementById("demo").innerHTML="doc155"
+    }
+    </script>
+</head>
+<body>
+    <button onclick="on()">test</button>
+    <p id="demo" ></p>
+</body>
